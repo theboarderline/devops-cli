@@ -1,3 +1,0 @@
-
-lifecycle_name = "prod"
-

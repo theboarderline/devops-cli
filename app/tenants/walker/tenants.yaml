@@ -1,0 +1,16 @@
+tenants:
+- name: tbl
+  admins:
+  - id: walker
+    email: wnobrien@lakegames.us
+    githubusername: walkerobrien
+  editors: []
+  viewers: []
+  apps:
+  - name: lakegames
+    domain: lakegames.us
+    lifecycles: []
+    admins: []
+    editors: []
+    viewers: []
+    enabled: true

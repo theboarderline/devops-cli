@@ -1,0 +1,65 @@
+
+tenants:
+  - name: tbl
+    viewers:
+      - theboarderline99@gmail.com
+    apps:
+      - name: boatload
+        domain: boatload.us
+        enabled: false
+
+      - name: lakegames
+        domain: lakegames.us
+        enabled: false
+
+  - name: silas
+    viewers:
+      - colemangroupsolutions@gmail.com
+    apps:
+      - name: coleman
+        domain: colemangroupsolutions.com
+        enabled: false
+
+      - name: standwithpaul
+        domain: standwithpaul.org
+        enabled: false
+
+      - name: slipperyjo
+        domain: slipperyjos.com
+        enabled: false
+
+  - name: obrien
+    editors:
+      - btobrien@umich.edu
+    apps:
+      - name: dadcoin
+        domain: dadcoin.io
+        enabled: false
+
+      - name: finley
+        domain: finleyobrien.com
+        enabled: true
+
+      - name: operators
+        domain: walkerobrien.org
+        enabled: false
+
+      - name: paytonpower
+        domain: paytonpower.org
+        enabled: false
+
+      - name: tp2
+        domain: tp2.info
+        enabled: false
+
+
+  - name: huron
+    viewers:
+      - scoury@umich.edu
+      - rjthomp@umich.edu
+    apps:
+      - name: onegate
+        domain: samcoury.org
+        enabled: false
+
+
