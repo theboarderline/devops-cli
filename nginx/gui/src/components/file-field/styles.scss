@@ -1,0 +1,34 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs-file-field {
+  position: relative;
+
+  .cgs-file-field--text-hidden {
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+
+    input {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .cgs-file-field--text {
+    width: 100%;
+    
+    .cgs-file-field--label {
+      @include setFont($font-size--md, $font-weight--regular);
+    }
+    .cgs-file-field--outlined {
+      .cgs-file-field--input {
+        @include setFont($font-size--md, $font-weight--regular);
+      }
+
+      .cgs-file-field--notched {
+
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../style//abstracts/_abstracts-dir';
+
+.footer-item-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto !important;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer-list-item-contaienr.MuiListItem-gutters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    flex: 0 0 100%;
+  }
+
+
+}
+.footer-list-item-contaienr a{
+  transition: all .4s;
+  transition-duration: 1
+}
+
+.footer-list-item-contaienr a:hover{
+  background: $pewterBlue;
+  transform: translateY(-5px);
+
+}
+
+.footer-creative-team{
+  color: $cardHeadingTextColor;
+}
+
+
+.footer-list-item-contaienr .makeStyles-block-52{
+  @media only screen and (max-width: 768px) {
+    padding: 1px;
+  }
+}

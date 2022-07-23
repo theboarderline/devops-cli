@@ -1,0 +1,68 @@
+@import '../../../style/abstracts/_abstracts-dir';
+
+
+.section-tab-header{
+    padding: 10px 0px !important;
+    //background: url("../../assets/img/homePageback.jpeg");
+}
+
+.section-tab-header .makeStyles-container-35{
+    box-shadow: rgba(30 ,166 ,224 , .1) 0px 5px 20px;
+    padding: 20px 0px;
+    @media only screen and (max-width: 768px) {
+        padding: 10px 0px;
+        width: 91%;
+    }
+}
+
+
+.makeStyles-section-142.section-tab-header{
+    box-shadow: rgba(30, 166, 224, .1) 0px 5px 20px;
+    border-radius: 7px;
+}
+
+.makeStyles-section-34.section-tab-header{
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.navigation-pills-container{
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .navigation-pills-heading{
+    color: $cardHeadingTextColor;
+    text-align: center;
+    font-family: inherit;
+    margin-bottom: 35px;
+  }
+}
+
+.nav-tabs-desc{
+  font-size: 18px;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+.nav-tabs-long-desc{
+  font-size: 14px;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: inherit;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.can-we-help-bottom-desc{
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 18px;
+}

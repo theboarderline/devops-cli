@@ -1,0 +1,31 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--user {
+  padding: 16px;
+
+  > div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .cgs--user-header {
+    @include setFont($font-size--lg, $font-weight--bold);
+    border-bottom: $slateGray 1px solid;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .cgs-user--title {
+      display: flex;
+      align-items: center;
+
+      .cgs-user--name {
+        word-break: break-all;
+      }
+    }
+  }
+
+  .cgs--user-actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

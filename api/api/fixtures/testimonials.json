@@ -1,0 +1,21 @@
+[
+
+  {
+    "model": "leads.testimonial",
+    "pk": 1,
+    "fields": {
+      "short_description": "Out of State Seller",
+      "member_testimonial": "It’s been a great relief to finally get rid of this headache. I’ve had no time to deal with maintaining or fixing the property. This process could not of have been anymore simple while having to deal with selling out of state."
+    }
+  },
+
+  {
+    "model": "leads.testimonial",
+    "pk": 2,
+    "fields": {
+      "short_description": "Helped with Relocation",
+      "member_testimonial": "It’s been a great relief to finally get rid of this headache. I’ve had no time to deal with maintaining or fixing the property. This process could not of have been anymore simple on top of having to deal with moving. Which would not have been possible without your expertise"
+    }
+  }
+
+]

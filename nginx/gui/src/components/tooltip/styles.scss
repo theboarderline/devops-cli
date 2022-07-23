@@ -1,0 +1,7 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--popper {
+  .cgs--tooltip {
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+}

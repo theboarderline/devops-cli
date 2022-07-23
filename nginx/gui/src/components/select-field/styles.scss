@@ -1,0 +1,23 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs-select {
+  width: 100%;
+
+  .cgs-select--label {
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+
+  .cgs-select--outlined {
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+}
+
+.cgs-select--menu {
+  .cgs-select--paper {
+    .cgs-select--list {
+      .cgs-select--item {
+        @include setFont($font-size--md, $font-weight--regular);
+      }
+    }
+  }
+}

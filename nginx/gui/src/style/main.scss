@@ -1,0 +1,11 @@
+@import './abstracts/_abstracts-dir';
+
+#root {
+  height: 100%;
+}
+
+html, body {
+  margin: 0;
+  height: -webkit-fill-available;
+  font-family: "Roboto", 'Quicksand', sans-serif;
+}

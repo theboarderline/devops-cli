@@ -1,0 +1,110 @@
+@import '../../style//abstracts/_abstracts-dir';
+
+.lg-rules {
+  padding: 16px;
+  padding-left: 25px;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 150px;
+  margin-top: 30px;
+ 
+
+  > div:not(:last-child) {
+    margin-bottom: 12px;
+   
+  }
+
+  .MuiGridListTile-tile{
+    box-shadow: rgba(30 ,166 ,224 , .1) 0px 5px 20px;
+  }
+
+  > div{
+    border-radius: 4px
+  }
+
+  .lg-rules--header {
+    @include setFont($font-size--lg, $font-weight--bold);
+    // border-bottom: $slateGray 1px solid;
+    padding-bottom: 2px;
+    color: $cardHeadingTextColor;
+    font-family: inherit;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+
+  .lg-rules--actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .lg-rules--table {
+    .lg-rules--table-head {
+      .lg-rules--table-row {
+        .lg-rules--table-cell {
+          @include setFont($font-size--md, $font-weight--bold);
+        }
+      }
+    }
+
+    .lg-rules--table-body {
+      .lg-rules--table-row {
+        .lg-rules--table-cell {
+          @include setFont($font-size--md, $font-weight--regular);
+        }
+      }
+    }
+  }
+}
+
+
+.faq-accordian-header.Mui-expanded{
+  border-bottom: 1px solid silver;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: linear-gradient(to bottom, #fefefe, #cdcdcd);
+  box-shadow: 0 2px 5px rgba($color: $cardHeadingTextColor, $alpha: 0.7);
+ 
+  .faq-collapse-header-heading{
+    font-size: 16px;
+    font-weight: 700;
+    color: $cardHeadingTextColor;
+    transition: all .4s cubic-bezier(.46,.47,.73,.72);
+    text-shadow: 1px 1px 1px #fff;
+  }
+}
+
+.faq-collapse-header-heading{
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+
+.faq-main-container{
+  // margin-top: 70px;
+  background-color: $linkWaterColor;
+
+  .faq-main-desc{
+    font-size: 18px;
+  }
+}
+
+.MuiAccordion-root:before{
+  display: none;
+}
+
+.faq-header-main-container{
+  position: relative;
+}
+
+.faq-header-conainer-main{
+  background-image: url('../../assets/img/faqback.jpg');
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 0px;
+}

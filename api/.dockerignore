@@ -1,0 +1,12 @@
+**/static/
+**/sql/
+**/utils/
+**/venv/
+**/var/*
+**/env/
+
+**/db.sqlite3
+**/__pycache__
+
+Dockerfile
+.dockerignore

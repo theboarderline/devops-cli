@@ -1,0 +1,127 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--home {
+  padding: 16px;
+
+  // padding-bottom: 600px;
+
+  > div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .cgs--home-header {
+    color: $headingTextColor;
+    @include setFont($font-size--lg, $font-weight--bold);
+    border-bottom: $slateGray 1px solid;
+    padding-bottom: 8px;
+    margin-left: 15px;
+
+    .cgs--home-header-bread-crum{
+      font-size: 14px;
+      color: black;
+    }
+  }
+
+  .cgs--home-actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.home--btn {
+  .home--btn-label {
+    text-transform: none;
+    text-decoration: none;
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+}
+
+
+.growing-header-container{
+  display: flex;
+  cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .growing-header-container-left{
+    margin-right: 10px;
+    font-weight: 600;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &:hover{
+      transform: scale(1.1) skewX(15deg);
+      transition: all .2s;
+      color: $headingTextColor;
+    }
+  }
+  .growing-header-container-right{
+    margin-left: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &:hover{
+      transform: scale(1.1) skewX((15deg));
+      transition: all .2s;
+      color: $headingTextColor;
+    }
+  }
+
+  .growing-header-container-right-focus{
+    transform: scale(1.1) skewX((15deg));
+    transition: all .2s;
+    color: $headingTextColor;
+  }
+}
+
+.cgs--home-header-heading{
+  text-align: center;
+}
+
+.cgs--home-header{
+  max-width: 95% !important;
+
+  @media only screen and (max-width: 1150px) {
+    max-width: 94.5% !important;
+  }
+  @media only screen and (max-width: 1150px) {
+    max-width: 94.5% !important;
+  }
+  @media only screen and (max-width: 1050px) {
+    max-width: 94% !important;
+  }
+  @media only screen and (max-width: 900px) {
+    max-width: 93% !important;
+  }
+
+  @media only screen and (max-width: 800px) {
+    max-width: 92% !important;
+  }
+  @media only screen and (max-width: 700px) {
+    max-width: 91% !important;
+  }
+  @media only screen and (max-width: 600px) {
+    max-width: 88% !important;
+  }
+  @media only screen and (max-width: 500px) {
+    max-width: 85% !important;
+  }
+  @media only screen and (max-width: 400px) {
+    max-width: 81.5% !important;
+  }
+  @media only screen and (max-width: 350px) {
+    max-width: 79% !important;
+  }
+ 
+}

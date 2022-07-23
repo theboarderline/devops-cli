@@ -1,0 +1,299 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--welcome {
+  padding: 16px;
+
+  > div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .cgs--welcome-header {
+ 
+    @include setFont($font-size--lg, $font-weight--bold);
+    border-bottom: $slateGray 1px solid;
+    padding-bottom: 8px;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 26px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 475px) {
+      font-size: 16px;
+    }
+  }
+  
+
+  .cgs--welcome-actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.welcome--btn {
+  .welcome--btn-label {
+    text-transform: none;
+    text-decoration: none;
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+}
+
+.contact-main-container{
+  // margin-top: 70px;
+  background-color: $linkWaterColor;
+  .about-us-heading{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: inherit;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .about-us-desc{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: inherit;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .about-about-list-container{
+    width: 50%;
+    margin: 0 auto;
+    .about-about-list{
+      .about-about-list-item{
+        list-style: none;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: inherit;
+        font-style: italic;
+        transition: all .4s;
+        transform-origin: left;
+        cursor: default;
+        @media only screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+        &:hover {
+          transform: translateX(10px);
+          color: #4797b9;
+        }
+      }
+
+      .about-about-list-item::before{
+        content: '\00BB';
+        margin-left: -20px;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .about-our-process-text{
+    text-align: center;
+    color: $cardHeadingTextColor;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  
+}
+
+.about-us-specialize-heading{
+  color: #4A86E8;   
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.helping-main-container{
+  .helping-neighbor-desc{
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+  }
+  .helping-neighbor-call-text{
+    font-size: 13px;
+    font-family: inherit;
+    color: #fff;
+  }
+
+  .helping-neighbor-offers{
+    margin-top: 14px;  
+  }
+
+  .helping-neighbor-offers{
+    color: #38458A;
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 13px;
+    cursor: pointer;
+  }
+
+  .helping-contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+
+    .helping-contact-container-text{
+      display: flex;
+      color: $cardHeadingTextColor;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+  }
+}
+
+.helping-contact-container-icon{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-us-icon-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; 
+  color: #000;
+  margin: 10px;
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  @media only screen and (max-width: 1290px) {
+    width: 90%;
+    
+  }
+}
+
+.helping-neighbor-offers{
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  color: #fff;
+  flex:  0 0 26%;
+  text-align: center !important;
+  justify-content: flex-start;
+  align-content: center;
+
+  @media only screen and (max-width: 1290px) {
+    flex:  0 0 50%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex:  0 0 100%;
+  }
+  
+  // background-color: red;
+}
+
+.helping-neighbor-offers-circle{
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 14px;
+  margin-right: 7px;
+}
+
+.contact-us-container{
+  position: relative;
+}
+
+.contact-us-container-absolute{
+  background-image: url('../../assets/img/contactusback.jpg');
+  position: absolute;
+  height: 230px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width:1290px) {
+    height: 260px;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 310px;
+  }
+}
+
+.contact-us-container-absolute-child{
+  background-color: rgba($color: $cardHeadingTextColor, $alpha: .6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.helping-neighbor-call-text{
+  font-size: 20px;
+  font-family: inherit;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.helping-contact-container-text{
+  color: #000;
+}
+
+.contact-us-heading{
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white !important;
+}
+
+.helping-neighbor-offers-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;  
+
+}
+
+.helping-neighbor-offers-last{
+  flex: 0 0 45%;
+  margin-top: 10px;
+  // background-color: red;
+}
+
+.helping-contact-container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+  // margin-left: 40px;
+  
+
+  @media only screen and (max-width: 1290px) {
+    margin-top: 50px;
+    flex-direction: column;
+    
+    
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+}

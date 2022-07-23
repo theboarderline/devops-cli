@@ -1,0 +1,7 @@
+@function setSlateGrayOpacity($opacity) {
+  @return rgba(111, 125, 140, $opacity);
+}
+
+@function setPewterBlueOpacity($opacity) {
+  @return rgba(119, 160, 169, $opacity);
+}

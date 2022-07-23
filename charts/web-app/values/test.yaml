@@ -1,0 +1,7 @@
+web-app:
+  lifecycle: test
+  lifecycle_letter: t
+  api:
+    tag: 9166c3b3f15e0c214a4025323e2c2ce698337dfa
+  nginx:
+    tag: 9166c3b3f15e0c214a4025323e2c2ce698337dfa

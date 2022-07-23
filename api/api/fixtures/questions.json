@@ -1,0 +1,48 @@
+[
+
+  {
+    "model": "leads.question",
+    "pk": 1,
+    "fields": {
+      "question": "How are you different from a real estate agent?",
+      "answer": "Real estate agents list properties and hope that someone will buy them. The agent shows the properties to prospective buyers for an average of up to 6 months before the property is closed on and sold. Oftentimes, the agent’s commission is 3-6% of the sale price of your house. So if it’s a $100,000 house, you can pay up to $6,000 in commissions to an agent. As well as additional costs for title and closing fees. The nationwide average for the cost of selling a home ranges between 10- 11% between agent commissions, title fees, and additional costs. Although Agents provide a great service, its suited towards those that can wait 6-12 months to sell and who don’t mind giving up some of that sale price to pay for the commissions"
+    }
+  },
+
+  {
+    "model": "leads.question",
+    "pk": 2,
+    "fields": {
+      "question": "Do you pay fair prices for properties?",
+      "answer": "In our experience, many sellers have appreciated that we can quickly offer a fair cash solution with no waiting for traditional bank financing, and no time or effort or expense is required on your part to fix up the property. If that’s what you’re looking for and you see the value in getting your house sold fast… let’s see if we can come to a fair win-win price. We believe it’s beneficial to know what everyone is offering"
+    }
+  },
+
+  {
+    "model": "leads.question",
+    "pk": 3,
+    "fields": {
+      "question": "How do you determine the price to offer on my house?",
+      "answer": "Great question, and we’re an open book: Our process is very straightforward. We look at the location of the property, what repairs are needed, the current condition of the property, and values of comparable houses sold in the area recently. We take many pieces of information into consideration so we can determine a fair solution that works for us and works for you too"
+    }
+  },
+
+  {
+    "model": "leads.question",
+    "pk": 4,
+    "fields": {
+      "question": "Are there any fees or commissions to work with you?",
+      "answer": "This is what makes us stand out from the traditional method of selling your house: There is NO hassle, fees, or commissions when you sell your house to us. We’ll make you an offer. If it’s a fit then we’ll buy your house and we’ll pay for the closing costs too! From there the responsibility is ours and you walk away without the burden of the property and its payments"
+    }
+  },
+
+  {
+    "model": "leads.question",
+    "pk": 5,
+    "fields": {
+      "question": "Is there any obligation when I submit my info?",
+      "answer": "No obligations whatsoever! We will reach out to gauge interest and move forward from there"
+    }
+  }
+
+]

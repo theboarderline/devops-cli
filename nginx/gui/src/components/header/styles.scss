@@ -1,0 +1,260 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--header {
+
+  &.cgs--header-primary {
+    color: $xiketic;
+    background-color: $headerBlueColor;
+  }
+
+  &__toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.MuiGridList-root.cgs--grid{
+  margin: 0 !important;
+}
+
+.section-card-text-heading{
+  color: $cardHeadingTextColor;
+  text-align: center;
+  font-size: 22px;
+
+  @media only screen and (max-width: 768px){
+    font-size: 16px;
+  }
+}
+
+.section-card-text-desc{
+  width: 95%;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+.section-card-column {
+  position: relative;
+
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+  &:after {
+    background: linear-gradient(0deg, #f40f68 0%, #fbcd08 100%);
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 30px);
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    transform: scaleX(0);
+    transition: all .3s;
+    transform-origin: left;
+    opacity: .3;
+  }
+}
+.section-card-container{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3px;
+  height: 100%;
+  margin-bottom: 40px;
+  transition: all .4s;
+  position: relative;
+  //z-index: 2;
+
+  @media only screen and (max-width: 900px) {
+    width: 91%;
+  }
+  
+  &:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: calc(100%);
+    background-color: #fff;
+    height: 100%;
+    transform: scaleX(1);
+    //opacity: 0.2;
+    z-index: 1;
+    transform-origin: right;
+    transition: all .4s;
+  }
+
+  .makeStyles-container-15{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .makeStyles-container-53{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-card-container-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    margin-bottom: 20px;
+  }
+}
+
+.navigation-side-tabs .Mui-selected{
+  background: $cardHeadingTextColor;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.navigation-side-tabs .Mui-selected:hover{
+  background: $cardHeadingTextColor;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navigation-side-tabs li strong{
+  color: $cardHeadingTextColor;
+}
+
+.navigation-side-tabs li{
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.header-item-container{
+  display: flex;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-side-menu{
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+
+  .openDrawer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+  }
+}
+
+.header-list-item-contaienr:hover{
+  background-color:$pewterBlue;
+  height: 100%;
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+  transition: all .2s ease-in;
+}
+
+.cgs--header__toolbar.MuiToolbar-gutters{
+  height: 70px;
+}
+
+.cgs--header__toolbar a img{
+  margin-top: 7px;
+}
+
+.header-list-item-contaienr:hover::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: green;
+  -webkit-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.header-list-item-contaienr a{
+  width: 80px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.header-free-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $cardHeadingTextColor;
+  font-weight: 500;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .header-free-phone-container{
+    display: flex;
+    align-items: center;
+
+    .header-free-phone-container-icon{
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.sign-out-btn{
+  margin-left: 10px;
+}
+.how-to-purchase {
+  height: 100%;
+  max-height: 300px;
+  max-width: 350px;
+}
+.section-card-3:hover  {
+  background-image: url("../../assets/img/craft.jpeg");
+}
+.section-card-2:hover  {
+  background-image: url("../../assets/img/discuss.jpeg");
+}
+.section-card-1:hover  {
+  background-image: url("../../assets/img/contactus.jpeg");
+}
+.section-card-container:hover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:after {
+    transform: scaleX(0);
+  }
+  & .section-card-container-inside {
+    color: #fff;
+    background-color: #00000050;
+  }
+  & .section-card-text-heading {
+    color: #fff;
+  }
+}

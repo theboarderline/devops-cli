@@ -1,0 +1,73 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.header-flow-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    height: 60px;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+
+    .header-flow-item-list{
+       cursor: pointer;
+        height: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all .3s;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: 10px;
+        text-decoration: none;
+        
+        transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+
+        @media only screen and (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            // background: $cardHeadingTextColor;
+            transform-origin: top bottom;
+            color: white;
+           
+            
+        }
+
+        &:hover{
+            background: $cardHeadingTextColor;
+            transform-origin: top bottom;
+            color: white;
+            transform: scale(1.1);
+        }
+    }
+
+    .link-focused{
+        cursor: pointer;
+        height: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all .3s;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: 10px;
+        text-decoration: none;
+        background: $cardHeadingTextColor;
+    }
+}

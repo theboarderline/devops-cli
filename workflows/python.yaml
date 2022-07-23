@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: multistep-
+  namespace: argo
+spec:
+  entrypoint: greeting
+  arguments:
+    parameters:
+      - name: salutation
+        value: Greetings
+      - name: username
+        value: Argonaut
+  templates:
+  - name: greeting
+    inputs:
+      parameters:
+        - name: salutation
+    script:
+      image: python:3.8
+      command: [python]
+      source: |
+        salutation = '{{inputs.parameters.salutation}}'
+        print(f'{salutation},')
+
+  activeDeadlineSeconds: 28800 # 8 hrs
+  ttlStrategy:
+    secondsAfterCompletion: 86400 # 1 day
+  podGC:
+    strategy: OnPodCompletion
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 8737

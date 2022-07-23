@@ -1,0 +1,29 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.side-drawer{
+    .MuiDrawer-paper{
+        width: 240px;
+    }
+
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.side-drawer-list{
+    .MuiListItem-root{
+        padding: 0;
+        border-bottom: 1px solid $cardHeadingTextColor;
+        font-size: 16px;
+    }
+
+    ul{
+        li {
+            a {
+                font-weight: 700;
+            }
+        }
+    }
+}

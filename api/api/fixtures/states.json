@@ -1,0 +1,40 @@
+[
+  {
+    "model": "leads.state",
+    "pk": 1,
+    "fields": {
+      "state_long": "Illinois",
+      "state_short": "IL"
+    }
+  },
+
+  {
+    "model": "leads.state",
+    "pk": 2,
+    "fields": {
+      "state_long": "Indiana",
+      "state_short": "IN"
+    }
+  },
+
+  {
+    "model": "leads.state",
+    "pk": 3,
+    "fields": {
+      "state_long": "South Carolina",
+      "state_short": "SC"
+    }
+  },
+
+
+  {
+    "model": "leads.state",
+    "pk": 4,
+    "fields": {
+      "state_long": "Washington",
+      "state_short": "WA"
+    }
+  }
+
+]
+

@@ -1,0 +1,119 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.whyhelp-main-container{
+  background-color: $linkWaterColor;
+  .whywe-help-heading{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .whywe-help-heading-sub{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    color: #fff;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .whywe-help-desc{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 600;
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .why-we-help-list{
+    margin-top: 30px;
+    .why-we-help-list-item{
+      font-size: 16px;
+      list-style: none;
+      font-weight: normal;
+      font-family: inherit;
+      margin-bottom: 4px;
+      font-style: italic;
+      transition: all .4s;
+      transform-origin: left;
+      cursor: default;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        transform: translateX(10px);
+        color: #4797b9;
+      }
+    }
+
+    .why-we-help-list-item::before{
+      content: '\00BB';
+      margin-left: -20px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .why-we-help-yourself{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .why-we-help-desc{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: inherit;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .why-we-help-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.why-we-help-container{
+  background-image: url('../../assets/img/whywehelp.jpg');
+  position: absolute;
+  height: 260px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 1280px) {
+    height: 320px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 300px;
+  }
+}
+
+.why-we-help-main-container{
+  position: relative;
+}

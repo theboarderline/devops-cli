@@ -1,0 +1,34 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs-video-form {
+  >div:not(:last-child) {
+    padding-bottom: 16px;
+  }
+
+  .cgs-video-form--btn {
+    .cgs-video-form--btn-label {
+      @include setFont($font-size--md, $font-weight--regular);
+      text-transform: none;
+    }
+  }
+}
+
+.cgs--signup-actions-text span{ 
+  @media only screen and (max-width: 768px){
+    font-size: 12px;
+  }
+}
+
+
+.cgs--signup-actions #firebaseui-auth-container .firebaseui-idp-button{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-user-info{
+  text-transform: uppercase;
+  color: $cardHeadingTextColor;
+  font-size: 26px;
+}

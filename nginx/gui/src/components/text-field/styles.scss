@@ -1,0 +1,35 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs--text {
+  // margin-bottom: 10px !important;
+  margin-top: 20px !important;
+  // margin-top: 20px;
+  .cgs--text-label {
+    &.cgs--text-label-outlined {
+      @include setFont($font-size--md, $font-weight--regular);
+
+      &.cgs--label-focused {
+        color: $xiketic;
+      }
+    }
+  }
+
+  .cgs--text-input {
+    // margin-bottom: 7px;
+    // margin-top: 7px;
+    // padding-bottom: 10px;
+    .cgs--input {
+      @include setFont($font-size--md, $font-weight--regular);  
+    }
+
+    &.cgs--input-focused {
+      .cgs--input-outline {
+        border-color: $xiketic;
+      }
+    }
+  }
+}
+
+.MuiTextField-root	{
+  background-color: white;
+}

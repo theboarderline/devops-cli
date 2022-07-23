@@ -1,0 +1,7 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs-message {
+  .cgs-message--text {
+    @include setFont($font-size--md, $font-weight--regular);
+  }
+}

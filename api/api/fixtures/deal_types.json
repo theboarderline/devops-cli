@@ -1,0 +1,50 @@
+[
+
+  {
+    "model": "leads.dealtype",
+    "pk": 1,
+    "fields": {
+      "deal_type": "Pre-Foreclosure"
+    }
+  },
+
+  {
+    "model": "leads.dealtype",
+    "pk": 2,
+    "fields": {
+      "deal_type": "Commercial"
+    }
+  },
+
+  {
+    "model": "leads.dealtype",
+    "pk": 3,
+    "fields": {
+      "deal_type": "Single Family"
+    }
+  },
+
+  {
+    "model": "leads.dealtype",
+    "pk": 4,
+    "fields": {
+      "deal_type": "Multi-Unit (2-4)"
+    }
+  },
+
+  {
+    "model": "leads.dealtype",
+    "pk": 5,
+    "fields": {
+      "deal_type": "Multi-Unit (5+)"
+    }
+  },
+
+  {
+    "model": "leads.dealtype",
+    "pk": 6,
+    "fields": {
+      "deal_type": "Land"
+    }
+  }
+]

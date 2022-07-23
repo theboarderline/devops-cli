@@ -1,0 +1,7 @@
+web-app:
+  lifecycle: ops
+  lifecycle_letter: o
+  api:
+    tag: 96832694a9c9ac34a5335054c3e7eb25118008b0
+  nginx:
+    tag: 96832694a9c9ac34a5335054c3e7eb25118008b0

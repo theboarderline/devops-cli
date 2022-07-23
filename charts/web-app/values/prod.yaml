@@ -1,0 +1,9 @@
+web-app:
+  lifecycle: prod
+  lifecycle_letter: p
+  api:
+    tag: 64fee6b598dd0a55510ce2d46606010ddfd02f56
+  nginx:
+    tag: 64fee6b598dd0a55510ce2d46606010ddfd02f56
+  db:
+    proxy: true

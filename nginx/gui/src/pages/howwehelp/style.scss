@@ -1,0 +1,198 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.how-we-help-main-container{
+
+  background: $linkWaterColor;
+
+  .how-we-help-content-container{
+    margin-bottom: 80px;
+  }
+
+  .how-we-help-list-container{
+    .how-we-help-list{
+      .how-we-help-list-item{
+        list-style: none;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: inherit;
+        font-style: italic;
+        margin-bottom: 4px;
+        transition: all .4s;
+        transform-origin: left;
+        cursor: default;
+        position: relative;
+        z-index: 2;
+        color: white;
+        @media only screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+        &:hover {
+          transform: translateX(10px);
+          color: #000;
+        }
+      }
+
+      .how-we-help-list-item::before{
+        content: '\00BB';
+        margin-left: -20px;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .how-we-help-desc-detail{
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    line-height: 18px;
+    margin-top: 45px;
+
+    @media only screen and (max-width: 900px) {
+      // margin-top: 80px;
+    }
+  }
+
+  .how-we-help-desc-detail strong{
+    color: $cardHeadingTextColor;
+    transition: all .4s;
+  }
+}
+
+.how-we-us-heading{
+  font-size: 22px;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  color: white;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.how-we-help-desc{
+  font-size: 18px;
+  font-weight: normal;
+  font-family: inherit;
+  font-weight: 800;
+  color: white;
+  margin-left: 10px;
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+
+.how-we-help-us-call{
+  text-align: center;
+  font-size: 22px;
+  color: #3B79FA;
+  font-family:  inherit;
+  font-weight: 700;
+  margin-top: 40px;
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.how-we-help-footer{
+  margin-top: 100px;
+  width: 50%;
+  margin: 0 auto;
+
+  .how-we-help-contact-text{
+    font-size: 12px;
+    color: #7faaed;
+    font-family: inherit;
+    font-weight: 500;
+  }
+
+  .how-we-help-phone-text{
+    margin-top: 30px;
+    color: #3B79FA;
+    font-size: 10px;
+    font-family: inherit;
+  }
+
+  .how-we-help-email-text{
+    color: #3B79FA;
+    font-size: 10px;
+    font-family: inherit;
+  }
+  
+}
+
+
+.how-we-help-get-your-best{
+  text-align: center;
+  margin-top: 10px;
+  color: #6D9EEB;
+  font-family: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.how-we-help-main-back-container{
+  position: relative;
+}
+
+.how-we-help-container{
+  background-image: url('../../assets/img/howwehelp.jpg');
+  position: absolute;
+  height: 230px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 1280px) {
+    height: 250px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 290px;
+  }
+}
+
+.how-we-help-image-item{
+  height: 80%;
+  width: 80%;
+}
+
+.how-we-help-image-item-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-we-help-first-image{
+  margin-top: 15px;
+}
+
+.show-on-mobile{
+  display: none;
+  @media only screen and (max-width: 1280px) {
+    display: block;
+  }
+}
+
+.mobile-image{
+  @media only screen and (max-width: 1024px) {
+    
+    margin-top: 50px;
+  }
+}
+
+.hide-on-mobile{
+  display: block;
+  @media only screen and (max-width: 1280px) {
+    display: none;
+  }
+}

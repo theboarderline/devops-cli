@@ -1,0 +1,28 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+
+
+.testimonial-background{
+  background-color: lightGray;
+  margin-top: 30px;
+}
+.testimonial-background-width{
+  width: 90%;
+  margin: auto;
+}
+
+.testimonial-header-main-container{
+  position: relative;
+}
+
+.testimonial-header-container{
+  background-image: url('../../assets/img/testimonialsback.jpg');
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}

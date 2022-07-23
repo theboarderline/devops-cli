@@ -1,0 +1,14 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.cgs-video-form {
+  >div:not(:last-child) {
+    padding-bottom: 16px;
+  }
+
+  .cgs-video-form--btn {
+    .cgs-video-form--btn-label {
+      @include setFont($font-size--md, $font-weight--regular);
+      text-transform: none;
+    }
+  }
+}

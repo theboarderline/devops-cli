@@ -1,0 +1,100 @@
+@import '../../style/abstracts/_abstracts-dir';
+
+.testimonial-card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  background: white;
+  box-shadow: rgba(50, 50, 93, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.07) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  .testimonial-card-container-quote::before{
+    content: "\201F";
+    font-size: 56px;
+    line-height: 20px;
+    position: absolute;
+    color: $cardHeadingTextColor;
+    top: 50px;
+    font-family: inherit
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  .testimonial-card-header{
+    min-height: 15rem;
+    background-color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    div{
+      width: 80%;
+      color: black;
+      font-family: inherit;
+    }
+
+  }
+
+  .testimonial-image-container{
+    margin-bottom: 20px;
+    .testimonial-image{
+      
+      border-radius: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 100px;
+      width: 100px;
+      background-position: center;
+
+      @media only screen and (max-width: 1024px) {
+        margin-top: 10%;
+      }
+    }
+  }
+
+  .testimonial-designation-conatiner{
+    margin-bottom: 20px;
+
+    .testimonial-designation-heading{
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: $cardHeadingTextColor;
+      font-family: inherit
+    }
+
+    .testimonial-designation-title{
+      font-size: 16px;
+      font-weight: normal;
+      font-family: inherit;
+      text-align: center;
+    
+    }
+  }
+}
+
+.slick-next::before{
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.slick-prev:before{
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
