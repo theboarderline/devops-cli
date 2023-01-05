@@ -23,6 +23,7 @@ var rootCmd = &cobra.Command{
 var PlatformName string
 var TenantName string
 var AppName string
+var Lifecycle string
 
 // Execute adds all child commands to the root command and sets flags appropriately.
 // This is called by main.main(). It only needs to happen once to the rootCmd.
@@ -42,12 +43,26 @@ func init() {
 
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.devopsctl.yaml)")
 	rootCmd.PersistentFlags().StringVar(&PlatformName, "platform", "gke", "Platform to deploy application on")
-	rootCmd.PersistentFlags().StringVar(&TenantName, "tenant", "walker", "Tenant of platform that deploys applications")
+	rootCmd.PersistentFlags().StringVar(&TenantName, "tenant", "walker", "Tenant of platform that manages application")
 	rootCmd.PersistentFlags().StringVar(&AppName, "app", "myapp", "Name of application")
+	rootCmd.PersistentFlags().StringVar(&Lifecycle, "lifecycle", "dev", "Application Lifecycle")
 
-	viper.BindPFlag("platform", rootCmd.PersistentFlags().Lookup("platform"))
-	viper.BindPFlag("tenant", rootCmd.PersistentFlags().Lookup("tenant"))
-	viper.BindPFlag("app", rootCmd.PersistentFlags().Lookup("app"))
+	err := viper.BindPFlag("platform", rootCmd.PersistentFlags().Lookup("platform"))
+	if err != nil {
+		return
+	}
+	err = viper.BindPFlag("tenant", rootCmd.PersistentFlags().Lookup("tenant"))
+	if err != nil {
+		return
+	}
+	err = viper.BindPFlag("app", rootCmd.PersistentFlags().Lookup("app"))
+	if err != nil {
+		return
+	}
+	err = viper.BindPFlag("lifecycle", rootCmd.PersistentFlags().Lookup("lifecycle"))
+	if err != nil {
+		return
+	}
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
@@ -74,6 +89,9 @@ func initConfig() {
 
 	// If a config file is found, read it in.
 	if err := viper.ReadInConfig(); err == nil {
-		fmt.Fprintln(os.Stderr, "Using config file:", viper.ConfigFileUsed())
+		_, err := fmt.Fprintln(os.Stderr, "Using config file:", viper.ConfigFileUsed())
+		if err != nil {
+			return
+		}
 	}
 }

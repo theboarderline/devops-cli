@@ -17,19 +17,31 @@ func GetMembers(s string) []tenants.Member {
 	for !done {
 		fmt.Print("Enter member's identifier (e.g. first name): ")
 		var id string
-		fmt.Scanln(&id)
+		_, err := fmt.Scanln(&id)
+		if err != nil {
+			return nil
+		}
 
 		fmt.Print("Enter member's email address: ")
 		var email string
-		fmt.Scanln(&email)
+		_, err = fmt.Scanln(&email)
+		if err != nil {
+			return nil
+		}
 
 		fmt.Print("Enter member's Github username: ")
 		var githubUsername string
-		fmt.Scanln(&githubUsername)
+		_, err = fmt.Scanln(&githubUsername)
+		if err != nil {
+			return nil
+		}
 
 		fmt.Print("Add another member? (y/n): ")
 		var cont string
-		fmt.Scanln(&cont)
+		_, err = fmt.Scanln(&cont)
+		if err != nil {
+			return nil
+		}
 		if cont == "n" {
 			done = true
 		}
@@ -45,7 +57,10 @@ func GetTenant() tenants.Tenant {
 
 	fmt.Print("Enter tenant name (e.g. team1): ")
 	var name string
-	fmt.Scanln(&name)
+	_, err := fmt.Scanln(&name)
+	if err != nil {
+		return tenants.Tenant{}
+	}
 
 	var tenant = tenants.Tenant{Name: name}
 
@@ -62,11 +77,17 @@ func GetApp() tenants.App {
 
 	fmt.Print("Enter app name (e.g. myapp): ")
 	var name string
-	fmt.Scanln(&name)
+	_, err := fmt.Scanln(&name)
+	if err != nil {
+		return tenants.App{}
+	}
 
 	fmt.Print("Enter app domain (e.g. example.com): ")
 	var domain string
-	fmt.Scanln(&domain)
+	_, err = fmt.Scanln(&domain)
+	if err != nil {
+		return tenants.App{}
+	}
 
 	var app = tenants.App{Name: name, Domain: domain, Enabled: true}
 
