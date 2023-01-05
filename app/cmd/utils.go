@@ -108,7 +108,11 @@ func GetTenants() tenants.TenantConfig {
 
 		fmt.Print("Add another tenant? (y/n): ")
 		var cont string
-		fmt.Scanln(&cont)
+
+		if _, err := fmt.Scanln(&cont); err != nil {
+			return tenants.TenantConfig{}
+		}
+
 		if cont == "n" {
 			done = true
 		}
@@ -125,7 +129,9 @@ func GetApps() []tenants.App {
 
 		fmt.Print("Add another app? (y/n): ")
 		var cont string
-		fmt.Scanln(&cont)
+		if _, err := fmt.Scanln(&cont); err != nil {
+			return apps
+		}
 		if cont == "n" {
 			done = true
 		}
